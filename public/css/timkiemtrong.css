@@ -1,0 +1,215 @@
+/* Trang chủ */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fafafa;
+}
+
+/*------------------- Header --------------*/
+
+/* Bố cục hình ảnh banner quảng cáo (.banner-quang-cao) */
+.banner-quang-cao img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu > li{
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* Ẩn đường gạch chân thẻ a (ul.menu>li>a) */
+ul.menu > li > a{
+	text-decoration: none;
+}
+
+/* Bố cục hình ảnh logo */
+.hinh-anh-logo img{
+	width: 100%;
+}
+
+/* Bố cục khung tìm kiếm (.form-tim-kiem) */
+.form-tim-kiem input{
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 1px solid #F7941E;
+}
+
+/* Bố cục giỏ hàng (.gio-hang) */
+.gio-hang{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.gio-hang i{
+	color: #F7941E;
+	font-size: 34px;
+	padding: 5px 0;
+}
+
+.gio-hang span{
+	color: #F7941E;
+}
+
+.gio-hang:hover{
+	color: #C92127;
+}
+
+.gio-hang:hover i{
+	color: #C92127;
+}
+.gio-hang:hover span{
+	color: #C92127;
+}
+
+/* Bố cục danh mục sản phẩm (.danh-muc-san-pham) */
+ul.danh-muc-san-pham{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cụ con của danh mục sản phẩm (ul.danh-muc-san-pham>li) */
+ul.danh-muc-san-pham > li{
+	padding: 8px 20px; 
+}
+
+/* Hover sản phẩm */
+ul.danh-muc-san-pham > li:hover{
+	background-color: #F7941E;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+/* Link gốc không hover */
+ul.danh-muc-san-pham > li.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+}
+
+/* Bố cục danh-muc-vertical */
+.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Bố cục thay đổi màu chữ menu dọc */
+ul.danh-muc-san-pham > li > a{
+	color: #000;
+	text-decoration: none; 
+}
+
+/*------------------- Phần thân: danh mục và sản phẩm nổi bật --------------*/
+
+/* Bố cục padding trên dưới navigation */
+.navigation{
+	margin: 20px 0;
+}
+
+/* Bố cục khung sản phẩm nổi bật (.san-pham-noi-bat) */
+.san-pham-noi-bat{
+	background-color: #fff;
+	margin: 20px 0;
+}
+
+/* Bố cục tiêu đề sản phẩm (.tieu-de-san-pham) */
+.tieu-de-san-pham{
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+/* Bố cục bao quát sản phẩm (.bao-quat-san-pham) */
+.bao-quat-san-pham{
+	padding: 10px;
+}
+
+/* Bố cục hình ảnh sản phẩm (.san-pham-hinh img) */
+.san-pham-hinh img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục chữ sản phẩm hình ra giữa (.san-pham-hinh) */
+.san-pham-hinh{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* Hover cho sản phẩm hình */
+.san-pham-hinh:hover{
+	transition: all 0.4s;
+	box-shadow: 0 4px 10px 0 rgba(210,33,39,.2);
+	border: 1px solid #c92127;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Bố cục giá mới sản phẩm (.gia-moi) */
+.gia-moi{
+	background-color: #f7931e;
+	display: inline-block;
+	color: #fff;
+	padding: 4px 6px;
+}
+
+.san-pham-hinh:hover .gia-moi{
+	background-color: #c92127;
+}
+
+/* Bố cục nội dung tên sách (.ten-sach) */
+.ten-sach{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+/* Bố cục màu vàng cho dấu sao (.dau-sao) */
+.dau-sao i{
+	color: #ffc600;
+}
+
+/* Bố cục hình ảnh tượng trưng (.anh-tuong-trung) */
+.anh-tuong-trung{
+	margin: 40px 0;
+}
+
+.anh-tuong-trung img{
+	width: 100%;
+}
+
+/* Bố cục khoảng cách logo-doi-tac */
+.logo-doi-tac{
+	padding: 20px 0;
+}
+
+/* Bố cục hình ảnh logo đối tác (.logo-doi-tac img) */
+.logo-doi-tac img{
+	width: 100%;
+	border: 1px solid  rgb(180, 180, 180);
+}
+
+/* Bố cục list hình ảnh */
+.list-anh-doi-tac{
+	margin: 10px 0;
+}

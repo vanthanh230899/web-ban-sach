@@ -1,0 +1,22 @@
+
+.panel-body {
+    padding: 15px 25px!important;
+    background: #fff;
+    height: 412px;
+}
+
+.custombutton{
+    display: block!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: #fff;
+}

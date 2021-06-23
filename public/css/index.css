@@ -1,0 +1,435 @@
+/* Trang chủ */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fafafa;
+}
+
+/*------------------- Header --------------*/
+
+/* Bố cục hình ảnh banner quảng cáo (.banner-quang-cao) */
+.banner-quang-cao img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu > li{
+	display: inline-block;
+	/* padding: 20px 10px; */
+}
+
+/* Ẩn đường gạch chân thẻ a (ul.menu>li>a) */
+ul.menu > li > a{
+	text-decoration: none;
+}
+
+/* Bố cục hình ảnh logo */
+.hinh-anh-logo img{
+	width: 100%;
+}
+
+/* Bố cục khung tìm kiếm (.form-tim-kiem) */
+.form-tim-kiem input{
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 1px solid #F7941E;
+}
+
+
+
+/* Bố cục giỏ hàng (.gio-hang) */
+.gio-hang{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.gio-hang i{
+	color: #F7941E;
+	font-size: 34px;
+	padding: 5px 0;
+}
+
+.gio-hang span{
+	color: #F7941E;
+}
+
+.gio-hang:hover{
+	color: #C92127;
+}
+
+.gio-hang:hover i{
+	color: #C92127;
+}
+.gio-hang:hover span{
+	color: #C92127;
+}
+
+
+/* Bố cục danh mục sản phẩm (.danh-muc-san-pham) */
+ul.danh-muc-san-pham{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cụ con của danh mục sản phẩm (ul.danh-muc-san-pham>li) */
+ul.danh-muc-san-pham > li{
+	padding: 8px 20px; 
+}
+
+ul.danh-muc-san-pham > .danh-muc-doc {
+    padding: 15px 20px;
+}
+
+/* Hover sản phẩm */
+ul.danh-muc-san-pham > li:hover{
+	background-color: #F7941E;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+
+
+/* Link gốc không hover */
+ul.danh-muc-san-pham > li.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+}
+
+/* Bố cục danh-muc-vertical */
+.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Bố cục thay đổi màu chữ menu dọc */
+.content{
+	color: #000;
+	text-decoration: none; 
+}
+
+li:hover .content{
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/*------------------- Phần thân: danh mục và sản phẩm nổi bật --------------*/
+
+/* Bố cục padding trên dưới navigation */
+
+
+/* Bố cục khung sản phẩm nổi bật (.san-pham-noi-bat) */
+.san-pham{
+	background-color: #fff;
+	border: 1px dashed #F7941E;
+	cursor: pointer;
+}
+
+/* Bố cục tiêu đề sản phẩm (.tieu-de-san-pham) */
+.tieu-de-san-pham{
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+	/* border-bottom: 1px solid #e6e6e6; */
+	padding: 5px 10px;
+}
+.san-pham:hover:hover .tieu-de-san-pham{
+	color: #F7941E;
+}
+
+.san-pham:hover .bot{
+	width: 180px;
+}
+
+.bot{
+	border-bottom: 2px solid #ffc600;
+	width: 50px;
+	transition: all 0.5s;
+}
+
+/* Bố cục hình ảnh sản phẩm (.san-pham-hinh img) */
+.san-pham-hinh img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục chữ sản phẩm hình ra giữa (.san-pham-hinh) */
+.san-pham-hinh{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid transparent;
+}
+
+/* Hover cho sản phẩm hình */
+.san-pham-hinh:hover{
+	transition: all 0.4s;
+	box-shadow: 0 8px 12px 0 rgba(210,33,39,.2);
+	border: 1px solid #c92127;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Bố cục giá mới sản phẩm (.gia-moi) */
+.gia-moi{
+	background-color: #f7931e;
+	display: inline-block;
+	color: #fff;
+	padding: 4px 6px;
+}
+
+.san-pham-hinh:hover .gia-moi{
+	background-color: #c92127;
+}
+
+/* Bố cục nội dung tên sách (.ten-sach) */
+.ten-sach{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	font-size: 14px !important;
+}
+
+/* Bố cục màu vàng cho dấu sao (.dau-sao) */
+.dau-sao i{
+	color: #ffc600;
+}
+
+.anh-tuong-trung img{
+	width: 100%;
+}
+
+/* Bố cục hình ảnh logo đối tác (.logo-doi-tac img) */
+.logo-doi-tac img{
+	width: 100%;
+	border: 1px solid  rgb(180, 180, 180);
+}
+
+/*------------------- Footer --------------*/
+
+/* Bố cục nền cho footer */
+.footer{
+	background-color: #fff;
+	padding: 20px;
+}
+
+/* Bố cục hình ảnh icon ứng dụng (.ung-dung img) */
+.ung-dung img{
+	width: 30%;
+	height: auto;
+	margin: 20px;
+}
+
+/* Bố cục icon mạng xã hội */
+.mang-xa-hoi{
+	padding: 10px 0;
+}
+
+/* focus*/
+:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.product{
+	text-decoration: none !important;
+}
+.item-link{
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #F7941E;
+}
+.item-link:hover{
+	color: #c92127;
+}
+/*sản phẩm giảm giá*/
+.sale{
+    font-size: 15px;
+    letter-spacing: 0;
+    padding: 0 4px 0 8px;
+    font-weight: 700;
+    z-index: 1;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    line-height: 25px;
+    background: #f44336;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	text-transform: uppercase;
+}
+.sale::before{
+	content: '';
+    position: absolute;
+    border: 12px solid transparent;
+    border-left: 8px solid #f44336;
+    top: 0;
+    left: 100%;
+    height: 100%;
+}
+
+/* phan trang*/
+/* Bố cục bao quát phân trang */
+.cover-phan-trang{
+	border-bottom: 1px solid #ecebeb;
+}
+
+/* Bố cục số phân trang (.phan-trang) */
+.phan-trang > ol{
+	list-style: none;
+	text-align: right;
+	/* padding: 20px 0; */
+}
+
+.phan-trang > ol > li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* Bố cục màu sắc cho số hiện tại (.so-hien-tai) */
+.phan-trang > ol > li.active{
+	background-color: #c00;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hover số phân trang */
+.phan-trang > ol > li:hover{
+	background-color: #c00;
+	color: #fff;
+	transition: all 0.6s;
+	text-decoration: none;
+}
+
+.img-bill{
+	width: 100px;
+}
+
+ 
+.icon-bill{
+	font-size: 20px;
+}
+
+@media(max-width: 415px) {
+	.gio-hang i{
+		font-size: 26px !important;
+	}
+	.cart{
+		display: none !important;
+	}
+	.title-bill{
+		font-size: 10px !important;
+	}
+	.date-bill{
+		font-size: 10px !important;
+	}
+	.price-bill{
+		font-size: 10px !important;
+	}
+	.status-bill{
+		font-size: 10px !important;
+	}
+	.img-bill{
+		width: 50px !important;
+	}
+	.tit-bill{
+		font-size: 8px !important;
+	}
+	.price-sub-bill{
+		font-size: 10px !important;
+	}
+	.count-bill{
+		font-size: 10px !important;
+	}
+	.hotline-bill{
+		font-size: 10px !important;
+	}
+	.title-bill{
+		font-size: 10px !important;
+	}
+	.icon-bill{
+		font-size: 15px !important;
+	}
+}
+@media(max-width: 360px) {
+	.gio-hang i{
+		font-size: 26px !important;
+	}
+	.cart{
+		display: none !important;
+	}
+}
+@media(max-width: 320px) {
+	.gio-hang i{
+		font-size: 26px !important;
+	}
+	.cart{
+		display: none !important;
+	}
+}
+
+.icon-timkiem{
+	font-size: 20px !important;
+    position: absolute !important;
+    top: 6% !important;
+    right: 20px !important;
+}
+
+.active-danhmuc{
+	background-color:#c92127 !important;
+	color: #fff !important;
+}
+.tit-login{
+	text-decoration: none !important;
+	color: #333;
+}
+.tit-login:hover{
+	color: #f7931e;
+}
+.active-login{
+	font-weight: 700 !important;
+	color: #c92127 !important;
+}
+.dropdown-menu {
+	position: absolute;
+    will-change: transform;
+    right: 0px;
+    top: 0px !important;
+	left: 20% !important;
+	right: 0 !important;
+    transform: translate3d(0px, 48px, 0px);
+}
+li{
+	list-style: none !important;
+}

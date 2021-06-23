@@ -1,0 +1,129 @@
+/* Danh mục sản phẩm */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--------------------------- Phần menu --------------------------------*/
+/* Bỏ bo góc phần menu */
+.custom-navbar{
+    border-radius: 0px;
+}
+
+.custom-brand{
+    color: #c92127!important;
+    font-size: 25px;
+}
+
+/* Chỉnh hình ảnh logo */
+/*.custom-brand img{
+	width: 75%;
+	height: auto;
+}*/
+
+/* Tạo kiểu cho chữ menu */
+.custom-navbar-right > li{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Đường viền cho menu active */
+.custom-navbar-right > li.active{
+    border-bottom: 1px solid #c92127;
+}
+
+/* Đường viền hover cho item menu li */
+.custom-navbar-right > li:hover{
+    border-bottom: 1px solid #c92127;
+}
+/*---------------- Phần nội dung sản phẩm có thể thay đổi ----------------*/
+
+/* Bố cục danh sách đầu */
+.danh-sach-dau{
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Bố cục tiêu đề đầu bảng */
+.tieu-de-bang{
+    line-height: 34px;
+}
+
+/* Bố cục table */
+.table{
+    margin: 0px;
+}
+
+/* Bố cục border xung quanh */
+.table-border thead > tr > th, .table-border tbody > tr > td {
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Bố cục tiêu đề đầu danh mục */
+.tieu-de-dau-danh-muc > tr > th{
+    text-align: center;
+}
+
+/* Bố cục hình ảnh img (.anh-san-pham) */
+.anh-san-pham img{
+    width: 75px;
+    height: 75px;
+}
+
+/* Bố cục mô tả */
+.mo-ta p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* Bố cục danh-sach-cuoi */
+.danh-sach-cuoi{
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Bố cục phân trang */
+.custom-pagination{
+    margin: 0px;
+}
+
+/* Bố cục trang hiện tại */
+.trang-hien-tai{
+    line-height: 39px;
+    height: 100%;
+}
+
+/* Bố cục input-group */
+.input-group{
+    margin: 10px 0;
+    width: 252px;
+}
+
+/* Bố cục hình ảnh của input-group */
+.input-group img{
+    width: 100px;
+    height: auto;
+}
+
+/* Bố cục input-group-addon */
+.input-group-addon{
+    width: 93px;
+}
+
+span.namestyle {
+    color: orangered;
+    font-weight: bold;
+    font-size: 16px;
+}

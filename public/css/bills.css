@@ -1,0 +1,289 @@
+/* Giỏ hàng */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fafafa;
+}
+
+/*---------------------- Phần header ---------------------------*/
+
+/* Bố cục hình ảnh banner quảng cáo (.banner-quang-cao) */
+.banner-quang-cao img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu > li{
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* Ẩn đường gạch chân thẻ a (ul.menu>li>a) */
+ul.menu > li > a{
+	text-decoration: none;
+}
+
+/* Bố cục hình ảnh logo */
+.hinh-anh-logo img{
+	width: 100%;
+}
+
+/* Bố cục khung tìm kiếm (.form-tim-kiem) */
+.form-tim-kiem input{
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 1px solid #F7941E;
+}
+
+/* Bố cục giỏ hàng (.gio-hang) */
+.gio-hang{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.gio-hang i{
+	color: #F7941E;
+	font-size: 34px;
+	padding: 5px 0;
+}
+
+.gio-hang span{
+	color: #F7941E;
+}
+
+.gio-hang:hover{
+	color: #C92127;
+}
+
+.gio-hang:hover i{
+	color: #C92127;
+}
+.gio-hang:hover span{
+	color: #C92127;
+}
+
+/*---------------------- Phần thân: danh mục giỏ hàng, thanh toán ---------------------------*/
+
+/* Bố cục danh mục của giỏ hàng */
+.danh-muc-gio-hang{
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin: 15px 0;
+}
+
+/* Bố cục màu của danh mục */
+.mau-danh-muc{
+	color: #888;
+}
+
+/* Bố cục màu cho khung input-checkbox */
+.nut-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nut-check input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0px;
+	width: 0px;
+}
+
+.checkmark{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	transform: translateX(-50%);
+}
+
+.nut-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ee4d2d;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.nut-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.nut-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Bố cục khung tên shop */
+.khung-ten-shop{
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+/* Bố cục nền của khung mô tả (.khung-mo-ta) */
+.khung-mo-ta{
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 2px;
+	position: relative;
+}
+
+/* Bố cục hình ảnh sản phẩm check */
+.san-pham-check img{
+	width: 75px;
+	height: 75px;
+}
+
+/* Bố cục input-soluong */
+input.input-soluong{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+/* custom lại nút button */
+.nut-giam, .nut-tang{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.09);
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* custom lại nút xóa */
+.nut-xoa{
+	background: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.nut-xoa i{
+	font-size: 26px;
+}
+/* Bố cục giá thành tiền */
+.thanh-tien{
+	font-size: 18px;
+	color: #ee4d2d;
+}
+
+/* Bố cục text-wrapper */
+.text-wrapper{
+	line-height: 60px;
+	text-align: center;
+}
+
+/* Bố cục tên sản phẩm */
+.ten-san-pham{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Bố cục khung tổng tiền */
+.khung-tong-tien{
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* Bố cục chữ tổng tiền */
+.tong-tien{
+	font-size: 25px;
+	color: #c00;
+}
+
+/* Bố cục nút mua hàng */
+.nut-mua-hang{
+	background-color: #ee4d2d;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/*---------------------- Phần footer ---------------------------*/
+
+/* Bố cục nền cho footer */
+.footer{
+	background-color: #fff;
+	padding: 20px;
+}
+
+/* Bố cục hình ảnh icon ứng dụng (.ung-dung img) */
+.ung-dung img{
+	width: 30%;
+	height: auto;
+	margin: 20px;
+}
+
+/* Bố cục icon mạng xã hội */
+.mang-xa-hoi{
+	padding: 10px 0;
+}
+
+/* focus*/
+:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.back-home{
+	border: 1px solid transparent;
+	 background: #F7941E;
+	 color: #fff;
+	 cursor: pointer;
+}
+
+.back-home:hover{
+	background: #C92127;
+}
+.item-link{
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #F7941E;
+}
+.item-link:hover{
+	color: #c92127;
+}
+/* .bor-bot{
+	content: '';
+	border-bottom: 1px solid #000 !important;
+	width: 200px !important;
+	height: 12px !important;
+} */

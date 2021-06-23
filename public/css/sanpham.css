@@ -1,0 +1,239 @@
+/* Sản phẩm */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fafafa;
+}
+
+/* Bố cục hình ảnh banner quảng cáo (.banner-quang-cao) */
+.banner-quang-cao img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu > li{
+	display: inline-block;
+	/* padding: 20px 10px; */
+}
+
+/* Ẩn đường gạch chân thẻ a (ul.menu>li>a) */
+ul.menu > li > a{
+	text-decoration: none;
+}
+
+/* Bố cục hình ảnh logo */
+.hinh-anh-logo img{
+	width: 100%;
+}
+
+/* Bố cục khung tìm kiếm (.form-tim-kiem) */
+.form-tim-kiem input{
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 1px solid #F7941E;
+}
+
+/* Bố cục giỏ hàng (.gio-hang) */
+.gio-hang{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.gio-hang i{
+	color: #F7941E;
+	font-size: 34px;
+	padding: 5px 0;
+}
+
+.gio-hang span{
+	color: #F7941E;
+}
+
+.gio-hang:hover{
+	color: #C92127;
+}
+
+.gio-hang:hover i{
+	color: #C92127;
+}
+.gio-hang:hover span{
+	color: #C92127;
+}
+
+/* Bố cục danh mục sản phẩm (.danh-muc-san-pham) */
+ul.danh-muc-san-pham{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cụ con của danh mục sản phẩm (ul.danh-muc-san-pham>li) */
+ul.danh-muc-san-pham > li{
+	padding: 8px 20px; 
+}
+
+ul.danh-muc-san-pham > .danh-muc-doc {
+    padding: 15px 20px;
+}
+
+/* Hover sản phẩm */
+ul.danh-muc-san-pham > li:hover{
+	background-color: #F7941E;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+/* Link gốc không hover */
+ul.danh-muc-san-pham > li.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+}
+
+/* Bố cục danh-muc-vertical */
+.danh-muc-doc{
+	background-color: #555;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Bố cục thay đổi màu chữ menu dọc */
+.content{
+	color: #000;
+	text-decoration: none; 
+}
+
+li:hover .content{
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/* Bố cục padding trên dưới navigation */
+.navigation{
+	margin: 20px 0;
+}
+
+/* Bố cục phần demo sản phẩm (.demo-san-pham) */
+.demo-san-pham{
+	/* background-color: #fff; */
+	/* padding: 20px; */
+}
+
+/* Bố cục hình ảnh logo, sản phẩm */
+.demo-san-pham img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục bao quát phân trang */
+.cover-phan-trang{
+	border-bottom: 1px solid #ecebeb;
+}
+
+/* Bố cục số phân trang (.phan-trang) */
+.phan-trang > ol{
+	list-style: none;
+	text-align: right;
+	/* padding: 20px 0; */
+}
+
+.phan-trang > ol > li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* Bố cục màu sắc cho số hiện tại (.so-hien-tai) */
+.phan-trang > ol > li.active{
+	background-color: #c00;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hover số phân trang */
+.phan-trang > ol > li:hover{
+	background-color: #c00;
+	color: #fff;
+	transition: all 0.6s;
+	text-decoration: none;
+}
+
+/* Bố cục tiêu đề */
+.tieu-de-category{
+	background-color: #c92127;
+	color: #fff;
+	width: 305px;
+	height: 0;
+	text-align: left;
+	line-height: 50px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 10px;
+	border-right: 50px solid #fff;
+	border-bottom: 50px solid transparent;
+	border-left: 0 solid transparent;
+}
+
+/* Bố cục 1 sản phẩm (.mot-san-pham) */
+.mot-san-pham{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* Bố cục hình ảnh 1 sản phẩm (.mot-san-pham) */
+.mot-san-pham img{
+	width: 100%;
+	height: auto;
+}
+
+/* Hover một sản phẩm */
+.mot-san-pham:hover{
+	transition: all 0.4s;
+	box-shadow: 0 4px 10px 0 rgba(210,33,39,.2);
+	border: 1px solid #c92127;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Bố cục tên sản phẩm (.ten-san-pham) */
+.ten-san-pham{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Bố cục giá mới */
+.mot-san-pham .gia-moi{
+	background-color: #f7931e;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+}
+
+/* Bố cục giá củ */
+.mot-san-pham .gia-cu{
+	color: #888888;
+	background-color: #F2F2F2;
+	display: inline-block;
+}

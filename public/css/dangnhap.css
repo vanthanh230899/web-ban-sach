@@ -1,0 +1,207 @@
+/* Đăng ký*/
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fafafa;
+}
+
+/* Bố cục hình ảnh banner quảng cáo (.banner-quang-cao) */
+.banner-quang-cao img{
+	width: 100%;
+	height: auto;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Bố cục menu (ul.menu) */
+ul.menu > li{
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* Ẩn đường gạch chân thẻ a (ul.menu>li>a) */
+ul.menu > li > a{
+	text-decoration: none;
+}
+
+/* Bố cục hình ảnh logo */
+.hinh-anh-logo img{
+	width: 100%;
+}
+
+/* Bố cục khung tìm kiếm (.form-tim-kiem) */
+.form-tim-kiem input{
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 1px solid #F7941E;
+}
+
+
+/* Tab đăng nhập và đăng ký */
+
+/* Bỏ margin */
+.no-margin{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 18px;
+	color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	border-top: none;
+}
+
+/* Bố cục khung đăng nhập và đăng ký */
+.login{
+	background-color: rgba(40,57,101,.9);
+	border-radius: 0px;
+	border: 2px dashed #f7941e;
+}
+
+/* Bố cục form */
+.form{
+	text-align: center;
+}
+
+/* Bố cục form thông tin */
+.form > input, .form > textarea{
+	width: 90%;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+	border: 2px dotted #f7941e;
+	font-size: 16px;
+	color: #000;
+}
+
+/* Bố cục form đăng nhập */
+.form-login{
+	text-align: center;
+}
+
+.form-login > input, .form-login > textarea{
+	width: 100%;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+	border: 2px dotted #f7941e;
+	font-size: 16px;
+	color: #000;
+}
+
+/* Bố cục padding cho form đăng ký */
+#dangky{
+	margin: 0 40px;
+}
+
+/* Bố cục button đăng nhập */
+.nut-dang-ky{
+	margin: 10px 0;
+	background-color: #f7f7f7;
+	color: #c92127;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* đường dẫn đăng ký*/
+.but-dangnhap{
+	color: #fff;
+}
+
+.but-dangnhap:hover{
+	color: #F7941E;
+}
+
+/* Hover nút button */
+.nut-dang-nhap:hover, .nut-dang-ky:hover{
+	background-color: #ffa943;
+	color: #fff;
+	border: 1px solid #72eee0;
+	transition: all 0.6s;
+}
+/* footer */
+/* Bố cục nền cho footer */
+.footer{
+	background-color: #fff;
+	padding: 20px;
+}
+
+/* Bố cục hình ảnh icon ứng dụng (.ung-dung img) */
+.ung-dung img{
+	width: 30%;
+	height: auto;
+	margin: 20px;
+}
+
+/* Bố cục icon mạng xã hội */
+.mang-xa-hoi{
+	padding: 10px 0;
+}
+
+/* ----------------- Chế độ di động --------------------*/
+@media (max-width: 768px) {
+	/* Bố cục lại width login */
+	.login{
+		width: 100%;
+	}
+
+	/* Bố cục lại width của thẻ input/ button */
+	.form > input, .nut-dang-nhap, .nut-dang-ky{
+		width: 90%;
+	}
+}
+
+/* focus*/
+:focus{
+	outline: none !important;
+	box-shadow: none !important;
+
+}
+.item-link{
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #F7941E;
+}
+.item-link:hover{
+	color: #c92127;
+}
+
+span.namestyle {
+    color: orangered;
+    font-weight: bold;
+    font-size: 16px;
+}
